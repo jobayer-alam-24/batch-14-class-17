@@ -4,100 +4,156 @@
     box-sizing: border-box;
 }
 
-.container-fluid .r-1 {
-    padding: 10px 15px;
-    background-color: #008374;
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-    border-bottom: 1px solid rgb(8, 145, 110);
+/* common css */
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+ul{
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+a:hover{
+    text-decoration: underline;
+}
+img{
+    width: 100%;
+}
+p{
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 0;
+}
+/* common css */
+
+.header-top-wrapper {
+    background-color: darkblue;
+    padding: 10px 30px;
 }
 
-.cs-color {
-    background-color: #00796B;
+.header-top-outer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.dot {
-    color: #F96F59;
-    font-size: 3rem;
+.ht__left-list {
+    padding-left: 0;
+    margin-bottom: 0;
+    display: flex;
 }
 
-.icon-btm {
-    text-align: right;
+.ht-left-list-item {
+    list-style-type: none;
 }
 
-.social-icon {
-    font-size: 1.2rem;
-    margin-top: 10px;
+.ht-left-list-item-link {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    margin-right: 15px;
 }
 
-.social-icon i {
-
-    margin-left: 10px;
+.header-top-right i {
+    opacity: 0.8;
+    padding: 10px;
+    color: white;
     cursor: pointer;
-    opacity: 0.9;
+    font-size: 16px;
 }
-
-.social-icon i:hover {
+.header-top-right i:hover{
     opacity: 1;
 }
 
-.nav ul {
-    margin-top: 10px;
+.nav-item-outer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
 }
 
-.nav ul li {
-    list-style-type: none;
+.nav-items-wrapper {
+    background-color: rgb(0, 66, 128);
+}
+
+.header-logo-inner {
     display: inline-block;
-    margin-left: 10px;
-}
-
-.nav ul li a {
-    text-decoration: none;
     color: white;
 }
-
-.nav ul li a:hover {
-    text-decoration: underline;
+.home-content-outer{
+   margin-top: 15%;
 }
-
-.s-nav {
-    text-align: right;
-    margin-top: 20px;
-}
-
-.s-nav ul li {
-    display: inline-block;
+.nav-list {
+    display: flex;
+    align-items: center;
     list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
 }
-
-.s-nav ul li a {
+.nav-list-link {
     color: white;
+    padding: 10px;
     text-decoration: none;
-    font-size: 1.3rem;
-    margin-left: 10px;
-    padding-bottom: 5px;
-    transition: .4s;
+    font-size: 16px;
 }
+.header-logo-inner{
+    text-decoration: none;
+}
+.home-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color:rgba(8, 23, 231, 0.836);
+    height: 85vh;
+}
+@media screen and (max-width: 767px) {
+    .home-content-outer{
+        margin-bottom: 30px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .nav-item-outer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .header-logo-inner {
+        display: inline-block;
+        color: white;
+    }
+    .nav-list {
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        padding-left: 0;
+        margin-bottom: 0;
+    }
 
-.s-nav ul li a:hover {
-    border-bottom: 2px solid #F96F59;
-}
+    .nav-list-link {
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        font-size: 16px;
+    }
 
-.head-btn {
-    font-weight: 500;
-    font-size: 20px;
-    letter-spacing: 1px;
-    display: inline-block;
-    padding: 10px 30px;
-    border-radius: 50px;
-    transition: 0.3s;
-    color: #fff;
-    background: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
-    border: 2px solid rgba(255, 255, 255, 0.1);
-}
-.head-btn:hover{
-    border: 1px solid white;
-}
-.sb-head{
-    margin-bottom: 10px;
+    .header-top-outer {
+        display: block;
+        text-align: center;
+    }
+
+    .header-top-left {
+        margin-bottom: 10px;
+    }
+
+    .ht__left-list {
+        align-items: center;
+        justify-content: center;
+    }
 }

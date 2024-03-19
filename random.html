@@ -1,67 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap practice</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
 
-   <div class="container-fluid">
-    <div class="row r-1 text-white">
-        <div class="col-sm-8 nav">
-            <ul>
-                <li><a href="#">example@gamil.com</a></li>
-                <li><a href="#">&phone; + 28917120217</a></li>
-            </ul>
-        </div>
-        <div class="col-sm-4 icon-btm">
-            <div class="social-icon">
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-linkedin"></i>
+    <header class="header-section">
+        <div class="header-top-wrapper">
+            <div class="container-fluid">
+                <div class="header-top-outer">
+                    <div class="header-top-left">
+                        <ul class="ht__left-list">
+                            <li class="ht-left-list-item">
+                                <a class="ht-left-list-item-link" href="#">example@gamil.com</a>
+                            </li>
+                            <li class="ht-left-list-item">
+                                <a class="ht-left-list-item-link" href="#">&phone; + 28917120217</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header-top-right">
+                        <div class="ht__right-social-icon">
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-facebook"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-   </div>
-   <header>
-    <div class="container-fluid cs-color">
-        <div class="row text-white p-2">
-            <div class="col-sm-4">
-                <h2>Impact<span class="dot">.</span></h2>
-            </div>
-            <div class="col-sm-8">
-                <div class="s-nav">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Blog</a></li>
+        <div class="nav-items-wrapper">
+            <div class="container-fluid">
+                <div class="nav-item-outer">
+                    <div class="header-logo-outer">
+                        <a class="header-logo-inner" href="#">
+                            <h2>Impact<span class="dot">.</span></h2>
+                        </a>
+                    </div>
+                    <ul class="nav-list">
+                        <li class="nav-list-item">
+                            <a class="nav-list-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-list-item">
+                            <a class="nav-list-link" href="#">About</a>
+                        </li>
+                        <li class="nav-list-item">
+                            <a class="nav-list-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-list-item">
+                            <a class="nav-list-link" href="#">Portfolio</a>
+                        </li>
+                        <li class="nav-list-item">
+                            <a class="nav-list-link" href="#">Blog</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="row text-white p-4 mt-4">
-            <div class="col-sm-6">
-                <div class="sb-head">
-                    <h2 class="fs-1 mb-4">Welcome to Impact</h2>
-                    <p class="text-light-subtle mb-5">Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p>
+    </header>
+
+    <section>
+        <div class="home-section p-4">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="home-content-outer text-white">
+                            <h2 class="home-content-title fs-1">Welcome to Impact</h2>
+                            <p class="home-content-text fs-5 mb-4">
+                                Sed autem laudantium dolores. Voluptatem itaque ea consequatur
+                                eveniet. Eum quas beatae cumque eum quaerat.
+                            </p>
+                            <button type="button" class="home-content-btn btn btn-warning text-white">Get Started</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="home-image-outer">
+                            <img class="home-image" src="image/bg-image.svg" alt="svg">
+                        </div>
+                    </div>
                 </div>
-                <button type="button" class="head-btn">Get Started</button>
-            </div>
-            <div class="col-sm-6">
-                <img src="image/bg-image.svg" alt="svg">
             </div>
         </div>
-    </div>
-   </header>
+    </section>
 
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
